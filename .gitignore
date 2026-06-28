@@ -1,0 +1,110 @@
+# ── Node / npm (todas las apps) ───────────────────────────────────────────────
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Angular ───────────────────────────────────────────────────────────────────
+angular_app/dist/
+angular_app/.angular/
+angular_app/.cache/
+angular_app/coverage/
+app_hecha_ia/dist/
+app_hecha_ia/.angular/
+app_hecha_ia/.cache/
+app_hecha_ia/coverage/
+*.tsbuildinfo
+
+# ── Flutter (flutter_app, cronograma_actividades, flutter_hecha_ai) ─────────
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/coverage/
+
+flutter_app/build/
+cronograma_actividades/build/
+flutter_hecha_ai/build/
+
+# Android (generado / local)
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/key.properties
+**/android/**/*.keystore
+**/android/**/*.jks
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+
+# iOS / macOS / desktop (generado)
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Flutter.framework/
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/ServiceDefinitions.json
+**/ios/**/GeneratedPluginRegistrant.*
+**/macos/Flutter/ephemeral/
+**/macos/**/GeneratedPluginRegistrant.*
+**/linux/flutter/ephemeral/
+**/windows/flutter/ephemeral/
+
+# Symbolication / obfuscation
+app.*.symbols
+app.*.map.json
+
+# ── Firebase (cache, logs, build de functions) ────────────────────────────────
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+ui-debug.log
+database-debug.log
+firestore-debug.log
+pubsub-debug.log
+firebase/functions/lib/
+
+# ── Secretos Firebase (nunca subir) ───────────────────────────────────────────
+**/google-services.json
+**/GoogleService-Info.plist
+**/*firebase-adminsdk*.json
+**/serviceAccount*.json
+**/.env.json
+**/.env.*.json
+!**/.env.example.json
+**/firebase_options_bk.dart
+
+# ── Secretos Angular ──────────────────────────────────────────────────────────
+**/environment.prod.ts
+**/environment.local.ts
+
+# ── Variables de entorno ──────────────────────────────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ── Nix ───────────────────────────────────────────────────────────────────────
+result
+flake.lock
+
+# ── Direnv ────────────────────────────────────────────────────────────────────
+.direnv/
+.envrc
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.idea/
+*.iml
+.vscode/settings.json
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
