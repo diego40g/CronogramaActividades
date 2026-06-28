@@ -1,0 +1,37 @@
+targets:
+  $default:
+    builders:
+      freezed:
+        options:
+          copy_with: true
+          equal: true
+          to_string: true
+          make_collections_unmodifiable: true
+          from_json: true
+          to_json: true
+          map:
+            map: true
+            maybeMap: true
+            mapOrNull: true
+          when:
+            when: true
+            maybeWhen: true
+            whenOrNull: true
+
+      json_serializable:
+        options:
+          any_map: false
+          checked: true
+          create_factory: true
+          create_to_json: true
+          disallow_unrecognized_keys: false
+          explicit_to_json: true
+          field_rename: snake
+          ignore_unannotated: false
+          include_if_null: false
+          generic_argument_factories: true
+
+      injectable_generator|injectable_builder:
+        options:
+          auto_register: true
+          generate_for_all: true

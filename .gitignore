@@ -28,7 +28,26 @@ flutter_app/build/
 cronograma_actividades/build/
 flutter_hecha_ai/build/
 
-# Android (generado / local)
+# Generados desde lib/ (build_runner: freezed, json_serializable, injectable, auto_route)
+**/*.g.dart
+**/*.freezed.dart
+**/*.gr.dart
+**/*.config.dart
+**/*.mocks.dart
+
+# Generados desde lib/l10n/*.arb (flutter gen-l10n)
+**/l10n/app_localizations.dart
+**/l10n/app_localizations_*.dart
+
+# Carpetas de plataforma de flutter_app (regenerables con flutter create)
+flutter_app/android/
+flutter_app/ios/
+flutter_app/linux/
+flutter_app/macos/
+flutter_app/web/
+flutter_app/windows/
+
+# Android (generado / local; otros proyectos Flutter del monorepo)
 **/android/.gradle/
 **/android/captures/
 **/android/local.properties
